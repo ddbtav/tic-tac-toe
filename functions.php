@@ -1,7 +1,5 @@
 <?php
 
-// echo "functions file";
-
 function draw_logout_button(){
 
     echo <<<_LOGOUT_BUTTON
@@ -51,11 +49,12 @@ function username_exists($username)
 
 function createPdo()
 {
-    $host = 'localhost:81';
-    $user = 'root';
-    // for now the password is empty
-    $password = '';
-    $dbname = 'loginprep';
+    require "dbaccess.php";
+
+    $host = 'localhost';
+    $user = $dbuser;
+    $password = $dbpassword;
+    $dbname = 'tic-tac-toe';
     // Set DSN
     $dsn = 'mysql:host=' . $host . ';dbname=' . $dbname;
     // Create a PDO instance
