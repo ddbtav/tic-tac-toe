@@ -1,2 +1,4 @@
-# tictactoe
-A Tic Tac Toe browser game written in PHP
+# Tic-Tac-Toe game
+Browser game written in PHP.
+
+
